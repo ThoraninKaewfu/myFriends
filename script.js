@@ -131,10 +131,11 @@ function handleCalculate() {
     `;
 }
 
-
 function handleReset() {
     // Clear all inputs and output
-    friendCountInput.value = '';
-    friendsInput.innerHTML = '';
+    friendCountText.style.display = 'none'; 
+    friendCountDisplay.textContent = ''; 
+    friendsInput.innerHTML = ''; 
     outputDiv.innerHTML = '';
+    confirmBtn.disabled = true; 
 }
